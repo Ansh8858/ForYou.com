@@ -76,8 +76,8 @@
     <script>
         function checkName(event) {
             event.preventDefault();
-            const name = document.getElementById('name').value;
-            if (name.toLowerCase() === 'manpreet') {
+            const name = document.getElementById('name').value.toLowerCase().trim();
+            if (name === 'manpreet') {
                 document.getElementById('loveMessage').style.display = 'block';
                 document.getElementById('proposal').style.display = 'block';
                 document.getElementById('response').style.display = 'none';
